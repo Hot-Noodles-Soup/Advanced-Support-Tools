@@ -1,5 +1,4 @@
 const { Client, Collection, GatewayIntentBits } = require("discord.js");
-
 const config = require('cfg-lib'); 
 let discordConf = new config.Config("./Config/config.cfg")
 
@@ -33,7 +32,7 @@ client.slashCommands = new Collection();
 
 
 // Initializing the project
-require("./Handlers")(client);
+require("./handlers")(client);
 let token = discordConf.get('bot_dev.token')
-
+console.log(`Index.js`)
 client.login(token);

@@ -1,7 +1,4 @@
 const client = require("../index");
-const { sendHelloWorld } = require("../controllers/embedController");
-const { pushSlashCommand } = require("../controllers/utils");
-const { send } = require("process");
 
 /**  What i want to do here is
  * At every Lunch Remove every command of all server, then repush them, is the best way i found to make sur every body have the last updated command without delay.
@@ -17,8 +14,6 @@ client.on("ready", async () => {
 });
 
   console.log("client ready")
-
-  pushSlashCommand(client);
   const Guilds = client.guilds.cache.map((guild) => guild);
   var i = 0;
   Guilds.forEach((guild) => {
