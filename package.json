@@ -1,0 +1,17 @@
+{
+  "name": "advanced-support-tools",
+  "version": "0.0.1",
+  "description": "Advanced Support Tools Bot is a versatile Discord bot designed to enhance server management with its custom ticket system, integrated payment processing, advanced moderation features, and seamless game integrations, including FiveM. This all-in-one bot allows you to efficiently manage support tickets, handle transactions securely, automate moderation tasks, and integrate in-game events and stats into your server, providing a streamlined and powerful solution for any Discord community.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cfg-lib": "^0.1.1-5",
+    "discord.js": "^14.15.3",
+    "glob": "^10.4.2",
+    "mysql": "^2.18.1"
+  }
+}
